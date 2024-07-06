@@ -1,0 +1,203 @@
+.carousel-section-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-wrap-slick1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slick1 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item-slick1 {
+  min-width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel-item-slick1.active {
+  display: block;
+}
+
+.carousel-flex-col-l-m {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.carousel-layer-slick1 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.carousel-layer-slick1.animated.visible-false {
+  opacity: 0;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%) skewX(-30deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) skewX(0deg);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateInDownLeft {
+  from {
+    opacity: 0;
+    transform: rotate(-45deg) translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+@keyframes rotateInUpRight {
+  from {
+    opacity: 0;
+    transform: rotate(45deg) translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.carousel-flex-c-m {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-stext-101 {
+  font-size: 1rem;
+  color: white;
+}
+
+.carousel-ltext-101 {
+  font-size: 2rem;
+  color: white;
+}
+
+.carousel-ltext-201 {
+  font-size: 3rem;
+  color: white;
+}
+
+.carousel-size-101 {
+  padding: 10px 20px;
+  border: 1px solid white;
+  transition: all 0.4s;
+}
+
+.carousel-size-101:hover {
+  background-color: white;
+  color: black;
+}
+
+.carousel-bg1 {
+  background-color: black;
+}
+
+.carousel-bor1 {
+  border: 1px solid white;
+}
+
+.carousel-hov-btn1 {
+  cursor: pointer;
+}
+
+.carousel-p-lr-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.carousel-trans-04 {
+  transition: all 0.4s;
+}
